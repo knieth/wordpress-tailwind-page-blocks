@@ -1,0 +1,34 @@
+# Application
+web/app/plugins/*
+!web/app/plugins/.gitkeep
+!web/app/plugins/advanced-custom-fields-pro
+!web/app/mu-plugins/*
+web/app/upgrade
+!web/app/uploads/*
+!web/app/uploads/.gitkeep
+web/app/uploads/cache/*
+web/app/cache/*
+!web/app/themes/tailwind
+
+# WordPress
+web/wp
+web/.htaccess
+
+# Logs
+*.log
+
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# Composer
+/vendor
+
+# WP-CLI
+wp-cli.local.yml
+
+# Other Files
+web/app/uploads/wpforms/cache
+web/app/uploads/wpforms/.htaccess
+
