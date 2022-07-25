@@ -1,0 +1,11 @@
+.woocommerce-store-notice {
+    @apply fixed bottom-0 w-full text-center bg-primary-500 py-3 px-2 font-medium text-white text-lg m-0;
+
+    a {
+        @apply text-white hover:text-white underline;
+    }
+
+    .woocommerce-store-notice__dismiss-link {
+        @apply text-sm ml-2 bg-primary-700 hover:bg-primary-900 no-underline py-1 px-2 rounded-full;
+    }
+}

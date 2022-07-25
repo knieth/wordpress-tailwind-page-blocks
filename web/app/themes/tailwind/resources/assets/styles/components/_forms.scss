@@ -1,0 +1,149 @@
+/** Search form */
+.search-form {
+	@apply flex items-center;
+}
+
+.search-form label {
+	@apply mb-4;
+
+	font-weight: normal;
+}
+
+.search-form .search-field {
+  	@apply block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-500 rounded;
+}
+
+.search-form .search-submit {
+	@apply inline-block align-middle text-center select-none border font-normal whitespace-nowrap py-2 px-4 rounded text-base leading-normal no-underline text-gray-100 bg-gray-500;
+
+	&:hover {
+		@apply bg-gray-400;
+	}
+}
+
+form {
+    .required {
+      	@apply text-red-500;
+    }
+	
+	label {
+		@apply text-sm font-medium text-gray-700;
+	}
+
+	.woocommerce-password-strength {
+		@apply text-sm font-medium text-gray-700;
+
+		&.bad, &.short {
+			@apply text-red-500;
+		}
+	}
+	
+	.quantity {
+		.qty {
+			@apply w-12 text-center;
+		}
+	}
+}
+
+input[type=range] {
+	@apply bg-transparent cursor-pointer rounded-full;
+	-webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+	-moz-appearance: none;
+    appearance: none;
+	width: 100%; /* Specific width is required for Firefox. */ /* Otherwise white in Chrome */
+}
+  
+input[type=range]::-webkit-slider-thumb {
+	@apply bg-primary-300 rounded-full w-6 h-6 -mt-2;
+	pointer-events: all;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+    appearance: none;
+}
+
+input[type=range]::-moz-range-thumb {
+	@apply bg-primary-300 border-transparent rounded-full w-6 h-6;
+	pointer-events: all;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+    appearance: none;
+}
+
+input[type=range]::-webkit-slider-thumb:hover {
+	background-color: #31D681;
+
+}
+
+input[type=range]::-moz-range-thumb:hover {
+	background-color: #31D681;
+}
+
+input[type=range]::-ms-track {
+	width: 100%;
+	height: 8.4px;
+	cursor: pointer;
+  
+	/* Hides the slider so custom styles can be added */
+	@apply bg-primary-300;
+	border-color: transparent;
+	color: transparent;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+	@apply bg-primary-300 rounded-full cursor-pointer;
+	width: 100%;
+	height: 8.4px;
+}
+  
+input[type=range]:focus::-webkit-slider-runnable-track {
+	@apply bg-primary-300;
+}
+  
+input[type=range]::-moz-range-track {
+	@apply bg-primary-300 rounded-full cursor-pointer;
+	width: 100%;
+	height: 8.4px;
+}
+
+/* Dual Range */
+
+.dual-range {
+	@apply rounded-full;
+	-webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+	-moz-appearance: none;
+    appearance: none;
+	background: transparent !important;
+	width: 100%; /* Specific width is required for Firefox. */ /* Otherwise white in Chrome */
+}
+
+.dual-range::-ms-track {
+	width: 100%;
+	height: 100% !important;
+	cursor: pointer;
+  
+	/* Hides the slider so custom styles can be added */
+	background: transparent !important; 
+	border-color: transparent !important;
+	color: transparent !important;
+}
+
+.dual-range::-webkit-slider-runnable-track {
+	background: transparent !important; 
+	width: 100%;
+	height: 100% !important;
+}
+  
+.dual-range:focus::-webkit-slider-runnable-track {
+	background: transparent !important; 
+}
+  
+.dual-range::-moz-range-track {
+	background: transparent !important; 
+	width: 100%;
+	height: 100% !important;
+}
+
+.frm_range_value {
+	@apply mt-2;
+}
+

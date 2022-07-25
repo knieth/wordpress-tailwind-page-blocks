@@ -1,0 +1,19 @@
+.woocommerce-MyAccount-navigation {
+	.woocommerce-MyAccount-navigation-link {
+		@apply border-transparent text-gray-900 hover:bg-gray-50 hover:text-gray-900 group border-l-4 px-3 py-3 flex items-center text-sm font-medium;
+
+		&.is-active {
+			@apply bg-primary-50 border-primary-500 text-primary-700 hover:bg-primary-50 hover:text-primary-700 group border-l-4 px-3 py-3 flex items-center text-sm font-medium;
+		}
+	}
+}
+
+.woocommerce-MyAccount-content {
+  	@apply divide-y divide-gray-200 lg:col-span-9;
+
+	@import "pages/myaccount/account";
+	@import "pages/myaccount/orders-table";
+}
+
+@import "pages/myaccount/subscriptions";
+@import "pages/myaccount/payment-methods";

@@ -1,0 +1,26 @@
+form.cart {
+	@apply space-y-6;
+	
+	.frm_forms {
+		.frm_form_fields {
+			legend.frm_screen_reader {
+				@apply hidden;
+			}
+		}
+	}
+
+	#formidable-addons-total {
+		@apply mt-5 text-2xl;
+
+		.fp-product-addon-totals {
+			.fp-product-addon-label {
+				@apply hidden;
+			}
+
+			.fp-product-addon-amount::before {
+				content: "Subtotal: ";
+			}
+		}
+	}
+	
+}

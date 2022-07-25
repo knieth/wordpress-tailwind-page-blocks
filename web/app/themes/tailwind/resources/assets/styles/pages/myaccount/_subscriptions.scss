@@ -1,0 +1,13 @@
+.shop_table {
+    &.subscription_details, &.order_details, &.form_change_payment_method_table {
+        @apply min-w-full divide-y divide-gray-300;
+        
+        .cancel {
+            @apply text-red-500;
+        }
+
+        .change_payment_method {
+            @apply hidden;
+        }
+    }
+}

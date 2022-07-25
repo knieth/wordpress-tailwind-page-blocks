@@ -1,0 +1,13 @@
+.woocommerce-EditAccountForm {
+    label, em {
+        @apply block text-sm font-medium text-gray-700;
+    }
+
+    legend {
+        @apply text-lg font-medium text-gray-900;
+    }
+
+    .form-row {
+        @apply space-y-1;
+    }
+}

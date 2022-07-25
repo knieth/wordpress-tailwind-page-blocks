@@ -1,0 +1,14 @@
+.btn {
+  @apply bg-primary rounded my-3 px-4 py-3 text-white leading-none;
+
+  transition: 0.2s ease;
+}
+
+button, a[type=button], input[type=submit] {
+  @apply w-full bg-primary-500 border border-transparent rounded-md shadow-sm py-3 px-4 text-base text-white font-medium hover:bg-primary-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-50 focus:ring-primary-500 disabled:opacity-25 text-center;
+}
+
+.no-apply-button {
+    @apply bg-transparent hover:bg-transparent border-0 shadow-none focus:ring-0 focus:ring-offset-0 rounded-none hover:text-current;
+
+}

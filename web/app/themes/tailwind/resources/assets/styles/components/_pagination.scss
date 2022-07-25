@@ -1,0 +1,11 @@
+.woocommerce-pagination {
+    @apply border-t border-gray-200 px-4 flex items-center justify-between sm:px-0;
+
+    a.page-numbers {
+        @apply border-transparent text-gray-500 pt-4 px-4 hover:text-gray-700 items-center border-t-2 hover:border-gray-300;
+    }
+
+    .current {
+        @apply border-primary-500 text-primary-500 pt-4 px-4 hover:text-primary-500 hover:border-primary-500 border-t-2;
+    }
+}

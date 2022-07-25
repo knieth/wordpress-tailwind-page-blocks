@@ -1,0 +1,115 @@
+.frm_forms {
+	.frm_form_fields {
+        legend.frm_screen_reader {
+            @apply hidden;
+        }
+
+        .frm_fields_container {
+            @apply space-y-6 grid grid-cols-12 gap-x-4;
+
+            .frm_primary_label {
+                @apply font-medium;
+            }
+
+            .frm_required {
+                @apply text-red-500;
+            }
+    
+            .frm_form_field, .frm_verify {
+                @apply space-y-2 col-span-12;
+
+                &.frm6 {
+                    @apply col-span-6;
+                }
+
+                &.frm4 {
+                    @apply col-span-4;
+                }
+
+                &.frm_hidden_container {
+                    .frm_primary_label {
+                        @apply invisible;
+                    }
+                }
+
+                &.frm_none_container {
+                    .frm_primary_label {
+                        @apply hidden;
+                    }
+                }
+
+                .frm_description {
+                    @apply block text-sm font-medium text-gray-700;
+                }
+
+                .frm_error {
+                    @apply font-medium text-sm text-red-800;
+                }
+
+                .frm_hidden {
+                    @apply hidden;
+                }
+    
+                .frm_opt_container {
+                    @apply space-y-2;
+
+                    .frm_image_option {
+                        @apply inline-block mr-2 relative w-24;
+
+                        input {
+                            @apply hidden;
+                        }
+
+                        input:checked + div {
+                            .frm_selected_checkmark {
+                                .frmsvg {
+                                    @apply opacity-100;
+                                }
+                            }
+                        }
+
+                        .frm_image_option_container {
+                            @apply border-gray-300 border rounded-md text-center cursor-pointer;
+                            
+                            img {
+                                @apply border-b border-gray-300 p-2;
+                            }
+
+                            .frm_empty_url {
+                                @apply rounded-t-md;
+                            }
+
+                            .frm_selected_checkmark {
+                                .frmsvg {
+                                    @apply absolute m-0 w-6 h-6 -left-2 -top-2 opacity-0;
+                                }
+                            }
+
+                            .frm_text_label_for_image {
+                                @apply text-base font-medium text-center;
+                            }
+                        }
+                    }
+
+                    #frm_checkmark_circle_icon {
+                        @apply fill-current text-primary-500;
+                    }
+                }
+
+                .frm_range_container {
+                    @apply w-full flex flex-col justify-center items-center;
+
+                    input[type=range] {
+                        @apply w-full;
+                    }
+                }
+            }
+        }
+
+        .frm_submit {
+            .frm_button_submit {
+                @apply w-auto break-normal;
+            }
+        }
+	}
+}

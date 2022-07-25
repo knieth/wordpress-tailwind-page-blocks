@@ -1,0 +1,53 @@
+.wishlist-title-container {
+    @apply hidden;
+}
+
+.wishlist_table {
+    @apply w-full;
+
+    thead {
+        @apply hidden;
+    }
+
+    a.button {
+        @apply mb-0 text-red-500 #{!important};
+    }
+
+    td {
+        @apply text-sm #{!important};
+
+        &.product-price {
+            @apply text-right #{!important};
+        }
+    }
+
+    &.mobile {
+        li {
+            @apply border-b-2 border-gray-200 mb-4 #{!important};
+
+            tr {
+                @apply flex;
+                
+                .label {
+                    @apply flex-1;
+                }
+            }
+
+            .additional-info-wrapper {
+                @apply flex justify-between items-center mb-4;
+                
+                .additional-info {
+                    @apply mb-0 #{!important};
+                }
+                
+                .remove_from_wishlist {
+                    @apply text-red-500;
+
+                    .fa-trash {
+                        @apply text-2xl;
+                    }
+                }
+            }
+        }
+    }
+}

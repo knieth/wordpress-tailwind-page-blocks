@@ -1,0 +1,11 @@
+.footer-widgets ul {
+	@apply mt-4 space-y-4;
+
+	li{
+		@apply text-gray-300;
+
+		a{
+			@apply text-base text-gray-300 hover:text-white;
+		}
+	}
+}

@@ -1,0 +1,23 @@
+input[type=text], input[type=number], input[type=tel], input[type=email], input[type=password], textarea {
+    @apply block w-full border-gray-300 rounded-md shadow-sm focus:ring-primary-500 focus:border-primary-500 sm:text-sm;
+}
+
+input[type=checkbox] {
+    @apply h-4 w-4 border-gray-300 rounded text-primary-500 focus:ring-primary-500;
+}
+
+input[type=radio] {
+  	@apply text-primary-500 focus:ring-primary-500;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  	-moz-appearance: textfield;
+}

@@ -1,0 +1,15 @@
+.woocommerce-message {
+    @apply rounded-md bg-green-50 p-4 text-sm font-medium text-primary-500 mb-4;
+
+    a {
+        @apply text-primary-700 hover:text-primary-900 underline underline;
+    }
+}
+
+.woocommerce-error, .frm_error_style {
+    @apply rounded-md bg-red-50 p-4 text-sm font-medium text-red-800;   
+}
+
+.woocommerce-error {
+    @apply mb-4;
+}

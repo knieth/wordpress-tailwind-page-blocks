@@ -1,0 +1,19 @@
+.woocommerce-shipping-fields {
+    @apply hidden;
+}
+
+.woocommerce-additional-fields {
+    @apply mt-10 border-t border-gray-200 pt-10;
+    
+	& > h3 {
+		@apply text-lg font-medium text-gray-900;
+	}
+
+    .woocommerce-additional-fields__field-wrapper {
+		@apply mt-4 lg:grid grid-cols-1 sm:grid-cols-2 gap-y-6 lg:gap-x-4;
+        
+		p {
+			@apply col-span-2 flex flex-col;
+        }
+    }
+}

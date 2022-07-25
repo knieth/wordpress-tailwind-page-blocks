@@ -1,0 +1,35 @@
+.woocommerce-cart-form {
+	@apply lg:grid lg:grid-cols-12 lg:gap-x-12 lg:items-start xl:gap-x-16;
+
+	.product-quantity {
+		@apply mx-auto;
+	}
+
+	.product-remove .remove {
+		@apply -m-2 p-2 inline-flex text-gray-400 hover:text-gray-500;
+	}
+
+	.woocommerce-cart-form__contents {
+		@apply lg:col-span-8;
+	}
+
+	.woocommerce-cart-form__cart-item {
+		@apply flex py-6 sm:py-10;
+
+		.woocommerce-Price-amount {
+			@apply font-medium text-gray-900;
+		}
+	}
+
+	ul > :first-child {
+		@apply pt-0;
+	}
+
+	.cart_totals {
+		@apply mt-16 bg-white border rounded-lg px-4 py-6 sm:p-6 lg:p-8 lg:mt-0 lg:col-span-4;
+	}
+
+	.cart_discount {
+		@apply flex items-center justify-between bg-green-300;
+	}
+}

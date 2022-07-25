@@ -1,0 +1,9 @@
+.cart-discount {
+	@apply flex items-center justify-between;
+
+	dt {
+		span {
+			@apply rounded-full bg-gray-200 text-xs text-gray-600 py-0.5 px-2;
+		}
+	}
+}

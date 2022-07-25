@@ -1,0 +1,15 @@
+.woocommerce-payment-methods {
+	th.woocommerce-PaymentMethod {
+		@apply px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider;
+	}
+	
+	.payment-method {
+		td {
+			@apply px-6 py-4 whitespace-nowrap text-sm text-gray-500;
+		}
+	}
+
+	.woocommerce-info {
+		@apply hidden;
+	}
+}

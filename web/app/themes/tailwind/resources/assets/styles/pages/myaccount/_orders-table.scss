@@ -1,0 +1,17 @@
+.woocommerce-orders-table__header {
+	@apply px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider;
+
+	&.woocommerce-orders-table__header-order-total {
+		@apply text-right;
+	}
+}
+
+.woocommerce-orders-table__row {
+	td {
+		@apply px-6 py-4 whitespace-nowrap text-sm text-gray-500
+	}
+
+	.woocommerce-orders-table__cell-order-total {
+		@apply text-right;
+	}
+}
